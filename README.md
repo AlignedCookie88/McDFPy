@@ -3,7 +3,7 @@
 
 Please note that this project is currently in very early development and is unfinished.
 ## Setup
-To setup the McDFPy, simply download the `mcdfpy` folder and place it in your project folder. The library will soon be available on PyPi.
+To download and install McDFPy simply run the command `pip install MCDFPy`.
 
 ## Features
 
