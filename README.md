@@ -1,2 +1,25 @@
 # McDFPy
  A python library to create code for the Minecraft server DiamondFire (https://mcdiamondfire.com).
+
+Please note that this project is currently in very early development and is unfinished.
+## Setup
+To setup the McDFPy, simply download the `mcdfpy` folder and place it in your project folder. The library will soon be available on PyPi.
+
+## Features
+
+- Templates
+- An interface for the Recode Item API (Socket).
+- Support for some code actions, listed below.
+
+Please note there is currently **no support** for tags.
+
+## Supported Code Actions
+
+- All of the **Player Event**s
+- All of the **Player Action**s
+- All of the **Set Variable** block.
+
+More code actions will be coming soon.
+
+## Usage
+Usage can be found on the [wiki](https://github.com/AlignedCookie88/McDFPy/wiki).
