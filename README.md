@@ -20,6 +20,7 @@ Please note there is currently **no support** for tags.
 - All of the **Player Action**s
 - All of the **Set Variable** block.
 - All of the **If Player** block.
+*This may not always be accurate after updates. The library may include features only available on Node Beta.*
 
 More code actions will be coming soon.
 

@@ -6,12 +6,13 @@ class ImportedBlock(BaseBlock):
     pass
 
 class ImportedBracket(BaseBlock):
-    def __init__(self, side):
+    def __init__(self, side, bracketType):
         self.side = side
+        self.bracketType = bracketType
     def export(self):
         return [{
             "id": "bracket",
-            "type": "norm",
+            "type": self.bracketType,
             "direct": self.side
         }]
 
@@ -55,6 +56,6 @@ class Template:
                 iblock.blockAction = block["action"]
                 iblock.blockType = block["block"]
             elif block["id"] == "bracket":
-                iblock = ImportedBracket(block["direct"])
+                iblock = ImportedBracket(block["direct"], block["type"])
             template.add_block(iblock)
         return template

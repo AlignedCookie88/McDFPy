@@ -95,6 +95,9 @@ class PlayerEvent_SwapHands(PlayerEvent):
 class PlayerEvent_ChangeSlow(PlayerEvent):
     blockAction = "ChangeSlow"
 
+class PlayerEvent_TameEntity(PlayerEvent):
+    blockAction = "TameEntity"
+
 # Movement events
 
 class PlayerEvent_Walk(PlayerEvent):
@@ -140,6 +143,9 @@ class PlayerEvent_ClickMenuSlot(PlayerEvent):
 
 class PlayerEvent_ClickInv(PlayerEvent):
     blockAction = "ClickInv"
+
+class PlayerEvent_ClickCraftSlot(PlayerEvent):
+    blockAction = "ClickCraftSlot"
 
 class PlayerEvent_PickUpItem(PlayerEvent):
     blockAction = "PickUpItem"
@@ -198,6 +204,9 @@ class PlayerEvent_Death(PlayerEvent):
 
 class PlayerEvent_KillPlayer(PlayerEvent):
     blockAction = "KillPlayer"
+
+class PlayerEvent_PlayerResurrect(PlayerEvent):
+    blockAction = "PlayerResurrect"
 
 class PlayerEvent_KillMob(PlayerEvent):
     blockAction = "KillMob"
@@ -328,6 +337,15 @@ class PlayerAction_CloseInv(PlayerAction):
 
 class PlayerAction_OpenBlockInv(PlayerAction):
     blockAction = "OpenBlockInv"
+
+class PlayerAction_SetCraftResult(PlayerAction):
+    blockAction = "SetCraftResult"
+
+class PlayerAction_SetCraftingItem(PlayerAction):
+    blockAction = "SetCraftingItem"
+
+class PlayerAction_SetCraftingItems(PlayerAction):
+    blockAction = "SetCraftingItems"
 
 # Scoreboard manipulation
 
@@ -619,8 +637,11 @@ class PlayerAction_SetVisualFire(PlayerAction):
 class PlayerAction_AttackAnimation(PlayerAction):
     blockAction = "AttackAnimation"
 
-class PlayerAction_SendAnimation(PlayerAction):
-    blockAction = "SendAnimation"
+class PlayerAction_HurtAnimation(PlayerAction):
+    blockAction = "HurtAnimation"
+
+class PlayerAction_WakeUpAnimation(PlayerAction):
+    blockAction = "WakeUpAnimation"
 
 class PlayerAction_SetStatus(PlayerAction):
     blockAction = "SetStatus"
@@ -706,6 +727,12 @@ class SetVariable_RandomNumber(SetVariable):
 
 class SetVariable_RoundNumber(SetVariable):
     blockAction = "RoundNumber"
+
+class SetVariable_MinNumber(SetVariable):
+    blockAction = "MinNumber"
+
+class SetVariable_MaxNumber(SetVariable):
+    blockAction = "MaxNumber"
 
 class SetVariable_NormalRandom(SetVariable):
     blockAction = "NormalRandom"
@@ -923,6 +950,9 @@ class SetVariable_GetLodestoneLoc(SetVariable):
 class SetVariable_SetLodestoneLoc(SetVariable):
     blockAction = "SetLodestoneLoc"
 
+class SetVariable_SetArmorTrim(SetVariable):
+    blockAction = "SetArmorTrim"
+
 class SetVariable_GetItemColor(SetVariable):
     blockAction = "GetItemColor"
 
@@ -981,6 +1011,12 @@ class SetVariable_ReverseList(SetVariable):
 
 class SetVariable_RandomizeList(SetVariable):
     blockAction = "RandomizeList"
+
+class SetVariable_FlattenList(SetVariable):
+    blockAction = "FlattenList"
+
+class SetVariable_ZipLists(SetVariable):
+    blockAction = "ZipLists"
 
 # Dictionary manipulation
 
