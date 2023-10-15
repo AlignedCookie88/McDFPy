@@ -2,6 +2,9 @@
  A python library to create code for the Minecraft server DiamondFire (https://mcdiamondfire.com).
 
 Please note that this project is currently in very early development and is unfinished.
+## Notice
+This project is outdated at the moment, and doesen't support many code actions. I will be rewriting it to run off of action dumps in the future.
+
 ## Setup
 To download and install McDFPy simply run the command `pip install MCDFPy`.
 
